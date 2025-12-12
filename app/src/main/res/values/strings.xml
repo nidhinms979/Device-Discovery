@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application Android Assignment</string>
+    <string name="discover_devices_on_your_network">Discover devices on your network</string>
+    <string name="app_icon">App Icon</string>
+    <string name="device_discovery">Device Discovery</string>
+    <string name="scan_devices">Scan Devices</string>
+    <string name="logout">Logout</string>
+    <string name="device_name">Device Name</string>
+    <string name="_192_168_1_1">192.168.1.1</string>
+    <string name="status">status</string>
 </resources>
