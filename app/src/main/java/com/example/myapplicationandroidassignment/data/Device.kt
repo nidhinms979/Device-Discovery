@@ -77,15 +77,15 @@ class DeviceRepository(private val deviceDao: DeviceDao) {
         deviceDao.insertDevice(device)
     }
     
-    suspend fun updateDevice(device: Device) {
+    /*suspend fun updateDevice(device: Device) {
         deviceDao.updateDevice(device)
-    }
+    }*/
     
     suspend fun updateDeviceStatus(ip: String, status: Boolean) {
         deviceDao.updateDeviceStatus(ip, status)
     }
     
-    suspend fun deleteDevice(device: Device) {
+    /*suspend fun deleteDevice(device: Device) {
         deviceDao.deleteDevice(device)
-    }
+    }*/
 }

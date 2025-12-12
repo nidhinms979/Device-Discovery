@@ -81,13 +81,11 @@ class DetailActivity : AppCompatActivity() {
         tvError.visibility = View.GONE
         
         lifecycleScope.launch {
-            // First, get public IP
             val ipResult = networkClient.getPublicIp()
             
             if (ipResult.isSuccess) {
                 val publicIp = ipResult.getOrNull()?.ip ?: return@launch
                 
-                // Then get geo info for the public IP
                 val geoResult = networkClient.getIpGeoInfo(publicIp)
                 
                 if (geoResult.isSuccess) {

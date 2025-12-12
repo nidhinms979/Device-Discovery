@@ -4,8 +4,6 @@ import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 
@@ -68,13 +66,13 @@ class NetworkClient {
                 
                 val geoInfo = IpGeoInfo(
                     ip = json.optString("ip", ipAddress),
-                    city = json.optString("city", null),
-                    region = json.optString("region", null),
-                    country = json.optString("country", null),
-                    loc = json.optString("loc", null),
-                    org = json.optString("org", null),
-                    postal = json.optString("postal", null),
-                    timezone = json.optString("timezone", null)
+                    city = json.optString("city", ""),
+                    region = json.optString("region", ""),
+                    country = json.optString("country", ""),
+                    loc = json.optString("loc", ""),
+                    org = json.optString("org", ""),
+                    postal = json.optString("postal", ""),
+                    timezone = json.optString("timezone", "")
                 )
                 Result.success(geoInfo)
             } else {

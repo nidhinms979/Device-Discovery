@@ -8,4 +8,8 @@
     <string name="device_name">Device Name</string>
     <string name="_192_168_1_1">192.168.1.1</string>
     <string name="status">status</string>
+    <string name="stop_scanning">Stop Scanning</string>
+    <string name="scanning_for_devices">Scanning for devices…</string>
+    <string name="scan_complete">Scan complete</string>
+    <string name="logged_in_as">Logged in as: %1$s</string>
 </resources>

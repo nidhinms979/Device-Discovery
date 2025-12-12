@@ -97,7 +97,7 @@ class HomeActivity : AppCompatActivity() {
     private fun displayUserInfo() {
         val email = authManager.getUserEmail()
         val name = authManager.getUserName()
-        tvUserInfo.text = "Logged in as: ${name ?: email ?: "User"}"
+        tvUserInfo.text = getString(R.string.logged_in_as, name ?: email ?: "User")
     }
     
     private fun setupRecyclerView() {
@@ -160,9 +160,9 @@ class HomeActivity : AppCompatActivity() {
     
     private fun startScanning() {
         isScanning = true
-        btnScan.text = "Stop Scanning"
+        btnScan.text = getString(R.string.stop_scanning)
         progressBar.visibility = View.VISIBLE
-        tvScanStatus.text = "Scanning for devices..."
+        tvScanStatus.text = getString(R.string.scanning_for_devices)
         
         acquireMulticastLock()
         
@@ -184,9 +184,9 @@ class HomeActivity : AppCompatActivity() {
     
     private fun stopScanning() {
         isScanning = false
-        btnScan.text = "Scan Devices"
+        btnScan.text = getString(R.string.scan_devices)
         progressBar.visibility = View.GONE
-        tvScanStatus.text = "Scan complete"
+        tvScanStatus.text = getString(R.string.scan_complete)
         
         mdnsService.stopDiscovery()
         releaseMulticastLock()

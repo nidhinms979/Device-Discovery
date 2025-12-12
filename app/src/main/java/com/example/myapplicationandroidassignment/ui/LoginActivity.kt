@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.myapplicationandroidassignment.ui
 
 import android.content.Intent
