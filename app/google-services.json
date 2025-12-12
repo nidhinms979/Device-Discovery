@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "608431132538",
+    "project_id": "device-discovery-c2492",
+    "storage_bucket": "device-discovery-c2492.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608431132538:android:70d5ac323306bff30250c3",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationandroidassignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3JkAUpTMlYdNinKic-uF6Hc-7N45dXzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
